@@ -2,13 +2,14 @@
 
 /**
  * binary_tree_uncle - get the uncle of a node
- * @tree: target node
+ * @node: target node
  * Return: NULL or Uncle node
  */
 
 binary_tree_t *binary_tree_uncle(binary_tree_t *node)
 {
 	binary_tree_t *pp_node;
+	
 	if (node && node->parent && node->parent->parent)
 	{
 		pp_node = node->parent->parent;

@@ -36,7 +36,7 @@ size_t bth(const binary_tree_t *tree)
 
 	if (tree)
 	{
-	       	left = 1 + bth(tree->left);
+		left = 1 + bth(tree->left);
 		right = 1 + bth(tree->right);
 		return (left > right ? left : right);
 
